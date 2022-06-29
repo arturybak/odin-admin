@@ -38,7 +38,7 @@ li:not(:last-child) {
 .sidebar {
     background-color: var(--pinky);
     color: white;
-    grid-row: 1/13;
+    grid-row: 1/4;
     display: grid;
     grid-template-rows: 1fr repeat(3, 3fr);
     align-items: center;
@@ -48,7 +48,7 @@ li:not(:last-child) {
 .header {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-column: 2/5;
+    grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 5px;
     margin-right: 10px;
@@ -100,7 +100,7 @@ li:not(:last-child) {
 
 
 .action-bar {
-    grid-column: 2/5;
+    grid-column: 2/3;
     display: grid;
     grid-template-columns: 3fr 2fr;
     padding: 0 2rem;
@@ -135,10 +135,43 @@ li:not(:last-child) {
 .main-content {
     background-color: var(--off-white);
     box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.4);
-    grid-area: 3/2/13/5;
+    grid-area: 3/2/4/3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.projects {
+    grid-area: 1/1/3/2;
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+    align-items: center;
 }
 
 .announcements {
-    grid-row: 4/5;
-    grid-column: 3/8;
+    grid-area: 1/2/2/3;
+
+}
+
+.trending {
+    grid-area: 2/2/3/3;
+}
+
+.projects h3 {
+    grid-area: 1/1/2/2;
+    margin-left: 2.5%;
+    margin-top: 5px;
+}
+
+.project-cards {
+    grid-area: 2/1/3/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* background-color: pink; */
+}
+.card {
+    width: 90%;
+    aspect-ratio: 3/2;
+    background-color: pink;
+    margin: 5%;
 }
