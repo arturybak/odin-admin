@@ -138,7 +138,7 @@ li:not(:last-child) {
     grid-area: 3/2/4/3;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 6fr 5fr;
 }
 
 .projects {
@@ -150,17 +150,27 @@ li:not(:last-child) {
 
 .announcements {
     grid-area: 1/2/2/3;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    align-items: center;
 
 }
 
 .trending {
     grid-area: 2/2/3/3;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    align-items: center;
 }
 
-.projects h3 {
+.section-header {
     grid-area: 1/1/2/2;
     margin-left: 2.5%;
     margin-top: 5px;
+}
+
+.announcements .section-header, .announcements .section-header {
+    margin-left: 5%;
 }
 
 .project-cards {
@@ -173,5 +183,17 @@ li:not(:last-child) {
     width: 90%;
     aspect-ratio: 3/2;
     background-color: pink;
+    margin: 5%;
+}
+
+.announcements-box {
+    background-color: blueviolet;
+    height: 90%;
+    margin: 5%;
+}
+
+.trending-box {
+    background-color: blueviolet;
+    height: 90%;
     margin: 5%;
 }
