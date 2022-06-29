@@ -31,8 +31,8 @@ li:not(:last-child) {
 .container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 2fr 3fr 3fr 2fr;
-    grid-template-rows: 1fr 2fr repeat(10, 1fr);
+    grid-template-columns: 2fr 8fr;
+    grid-template-rows: 1fr 2fr 10fr;
 }
 
 .sidebar {
@@ -59,7 +59,11 @@ li:not(:last-child) {
     align-items: center;
     font-size: 24px;
     font-weight: bold;
-    padding: 25px 0; 
+    padding: 20px 0; 
+}
+
+#logo-icon {
+    font-size: 36px;
 }
 
 .search {
@@ -70,7 +74,7 @@ li:not(:last-child) {
 }
 
 #search-bar {
-    width: 60%;
+    width: 70%;
     border-radius: 20px;
     border-style: none;
     height: 50%;
@@ -80,7 +84,8 @@ li:not(:last-child) {
 .header-actions {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 10px;
 }
 
 #avatar-sml {
@@ -98,25 +103,22 @@ li:not(:last-child) {
     grid-column: 2/5;
     display: grid;
     grid-template-columns: 3fr 2fr;
-    /* justify-content: space-between;
-    align-items: center; */
     padding: 0 2rem;
 }
 
 .greeting-bar {
-    /* background-color: purple; */
     display: flex;
+    align-items: center;
 }
 
 .greeting {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .action-buttons {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     gap: 10px;
 }
@@ -134,4 +136,9 @@ li:not(:last-child) {
     background-color: var(--off-white);
     box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.4);
     grid-area: 3/2/13/5;
+}
+
+.announcements {
+    grid-row: 4/5;
+    grid-column: 3/8;
 }
